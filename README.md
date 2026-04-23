@@ -28,6 +28,17 @@
 
 古诗采集没有记录过程，因为古诗数据庞大，目标网站有限制，采集过程经常中断超过了一个星期。2017 年新加入全宋词，[全宋词爬取过程及数据分析](https://jackeygao.github.io/r/words/crawl-ci.html)。
 
+## 仓库定位与来源
+
+本仓库是 `chinese-poetry/chinese-poetry` 的 fork，目标是提供一个可复现的**简体中文版本**古典诗词数据库。
+
+- 上游项目（原始数据与维护来源）：https://github.com/chinese-poetry/chinese-poetry
+- 本仓库公开地址（简体版）：https://github.com/bruce2233/chinese-poetry-simplified
+- 繁转简规则来源：`tools/TCFontCreator`（https://github.com/GuiWonder/TCFontCreator）
+- 转换词典基础：OpenCC 词表（由 TCFontCreator 在 `main/datas` 中提供）
+
+数据内容主要承接自上游项目；本仓库的主要增量是“繁体到简体”的批量转换流程与转换后的数据分发。原项目及本仓库均遵循 [MIT](https://github.com/chinese-poetry/chinese-poetry/blob/master/LICENSE) 许可证。
+
 ## 高频词分析图
 
 <details open>
